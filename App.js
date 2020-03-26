@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import TodoInput from "./TodoInput";
 import TodoItem from "./TodoItem";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
     render() {
              return (
-                <div>
-                   Tasks
-                   <TodoInput />
-                   <TodoList />
+                <div className="container">
+                 <div className="row">
+                  <div className="col-10 mx-auto col-md-8 mt-4">
+                   <h2> className="text-capitalize text-center">Input</h2>
+                    <TodoInput />
+                    <TodoList />
+                  </div>
+                 </div>
                 </div>
                  );
 	}
