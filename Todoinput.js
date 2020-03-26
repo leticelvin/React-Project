@@ -15,6 +15,9 @@ export default class TodoInput extends Component {
 	        </div>
 	        <input type="text" classname="form-control text-capitalize" placeholder="Add task"/>
 	      </div>
+	    <button type="submit" className="btn btn-block btn-primary mt-3">
+		Add task
+	    </button>
        </form>
       </div>
       );
