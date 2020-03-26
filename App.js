@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import TodoInput from "./TodoInput";
-import TodoItem from "./TodoItem";
+import TodoInput from "./components/TodoInput";
+import TodoItem from "./components/TodoItem";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
