@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoItem from "./components/TodoItem";
 import "bootstrap/dist/css/bootstrap.min.css";
+import uuid from "uuid";
 
 class App extends Component {
 state={
   items: [],
-  id:0,
+  id: uuid(),
   item: ' ',
   editItem: false
 };
@@ -14,9 +15,24 @@ state={
 handleChange = (e) => {
   this.setState({ item: e.target.value });
 };
-handleSubmit = (e) => { 
 
+handleSubmit = e => {
+e.preventDefault();
+
+const newItem = {
+id:this.state.id,
+item:this.state.item
 }
+
+const updatedItem = [...this.state.items, newItem];
+
+this.setState({
+items:updatedItems,
+item: " ",
+})
+
+};
+
     render() {
              return (
                 <div className="container">
