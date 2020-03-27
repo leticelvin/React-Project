@@ -29,6 +29,8 @@ const updatedItem = [...this.state.items, newItem];
 this.setState({
 items:updatedItems,
 item: " ",
+id: uuid(),
+editItem: false
 })
 
 };
