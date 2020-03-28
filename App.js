@@ -34,8 +34,10 @@ id: uuid(),
 editItem: false
 })
 
-};
-
+clearList = () => {
+  this.setState({items: []  })	
+	
+   };
     render() {
              return (
                 <div className="container">
