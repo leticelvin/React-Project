@@ -32,12 +32,12 @@ items:updatedItems,
 item: " ",
 id: uuid(),
 editItem: false
-})
-
+});
+	
+};
 clearList = () => {
   this.setState({items: []  })	
-	
-   };
+};
     render() {
              return (
                 <div className="container">
@@ -49,7 +49,7 @@ clearList = () => {
 		     handleChange={this.handleChange}
 		     handleSubmit={this.handleSubmit}
 		     />
-                    <TodoList items={this.state.items} />
+                    <TodoList items={this.state.items} clearList={this.clearList} />
                   </div>
                  </div>
                 </div>
