@@ -14,9 +14,7 @@ export default class TodoList extends Component {
         {items.map(item => {
         return(
             <TodoItem key={item.id} title={item.title}/>
-            )
-          })
-        } 
+          })} 
         <button type="button" className="btn btn-danger btn-block text-capitalize mt-5"
         onClick= {clearList}>
         Clear list
