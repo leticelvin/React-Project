@@ -20,9 +20,10 @@ handleSubmit = e => {
 e.preventDefault();
 
 const newItem = {
-id:this.state.id,
-item:this.state.item
+id: this.state.id,
+title: this.state.item
 }
+console.log(newItem);
 
 const updatedItem = [...this.state.items, newItem];
 
